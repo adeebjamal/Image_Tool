@@ -10,10 +10,12 @@
     <p>
         <%= message %>
     </p>
+    <br>
     <form action="/upload" method="post" enctype="multipart/form-data">
         <input type="file" name="uploadedFile"><br>
         <select name="operation">
             <option value="unblur">Unblur</option>
+            <option value="denoise">Denoise</option>
             <option value="upscale">Upscale</option>
             <option value="downscale">Downscale</option>
         </select><br>
