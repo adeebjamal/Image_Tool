@@ -3,7 +3,7 @@ import fs from "fs";
 import save_image from "./save_image";
 
 export default async(imagePath: string): Promise<string> => {
-    const unblurredBuffer: Buffer = await sharp(imagePath).blur(5).toBuffer();
+    const unblurredBuffer: Buffer = await sharp(imagePath).blur(0.3).toBuffer();
     fs.unlink(imagePath, (error) => {
         if(error) {
             console.log(error);
