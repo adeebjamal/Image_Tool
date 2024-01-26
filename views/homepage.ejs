@@ -7,18 +7,18 @@
 </head>
 
 <body>
-    <p>
+    <p style="color: red;">
         <%= message %>
     </p>
     <br>
     <form action="/upload" method="post" enctype="multipart/form-data">
-        <input type="file" name="uploadedFile"><br>
+        <input type="file" name="uploadedFile">
         <select name="operation">
             <option value="unblur">Unblur</option>
             <option value="denoise">Denoise</option>
             <option value="upscale">Upscale</option>
             <option value="downscale">Downscale</option>
-        </select><br>
+        </select>
         <button type="submit">Upload</button>
     </form>
     <p>This is an open source application. <a href="https://github.com/adeebjamal/Image_Tool">Source code</a></p>
@@ -26,74 +26,38 @@
     <p>NOTE: The unblur feature utilizes Gaussian blur. It may not produce satisfactory results for every image.</p>
 </body>
 <footer>
-    <!-- <style>
+    <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .container {
-            text-align: center;
-            max-width: 600px;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-        }
-
-        p {
-            color: #666;
-            margin-bottom: 30px;
-        }
-
-        form {
+            font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
+            height: 100vh;
+            /* Ensures full viewport height */
+            margin: 0;
         }
 
-        input,
-        select,
-        button {
-            margin: 10px 0;
-            padding: 12px;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            width: 100%;
-            box-sizing: border-box;
-            font-size: 16px;
-            transition: border-color 0.3s ease;
+        form {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid;
+            border-radius: 10px;
         }
 
-        input:focus,
-        select:focus,
-        button:focus {
-            outline: none;
-            border-color: #3498db;
+        p {
+            margin-bottom: 10px;
         }
 
         select,
-        button {
-            cursor: pointer;
+        input {
+            margin-bottom: 10px;
         }
 
-        button {
-            background-color: #3498db;
-            color: #fff;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
+        a {
+            color: #007BFF;
         }
-
-        button:hover {
-            background-color: #2980b9;
-        }
-    </style> -->
+    </style>
 </footer>
 
 </html>
