@@ -9,6 +9,11 @@
 <body>
     <h1>Welcome to Image Processing Tool</h1>
     <p>Select an image and one of the given operations, then click on the upload button.</p>
+    <h3>Available Operations</h3>
+    <p>1. Upscale: Increase the resolution of an image.</p>
+    <p>2. Downscale: Decrease the resolution of an image.</p>
+    <p>3. Unblur: Remove blur from an image using a Gaussian blur.</p>
+    <p>4. Denoise: Apply median filtering to reduce noise in an image.</p>
     <p style="color: red;">
         <%= message %>
     </p>
@@ -16,10 +21,10 @@
     <form action="/upload" method="post" enctype="multipart/form-data">
         <input type="file" name="uploadedFile">
         <select name="operation">
-            <option value="unblur">Unblur</option>
-            <option value="denoise">Denoise</option>
             <option value="upscale">Upscale</option>
             <option value="downscale">Downscale</option>
+            <option value="unblur">Unblur</option>
+            <option value="denoise">Denoise</option>
         </select>
         <button type="submit">Upload</button>
     </form>
