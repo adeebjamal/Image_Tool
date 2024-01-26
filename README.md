@@ -26,7 +26,7 @@ git clone https://github.com/adeebjamal/Image_Tool
 2. Navigate to the project directory:
 
 ```bash
-cd image-processing-tool
+cd Image-Tool
 ```
 
 3. Install dependencies:
