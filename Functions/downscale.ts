@@ -19,6 +19,6 @@ export default async(imagePath: string): Promise<string> => {
     while(imagePath[index] !== '.') {
         extension += imagePath[index--];
     }
-    const path: string = await save_image(`downscale_${extension.split("").reverse().join("")}`, downscaledBuffer);
+    const path: string = await save_image(`downscale.${extension.split("").reverse().join("")}`, downscaledBuffer);
     return path;
 }

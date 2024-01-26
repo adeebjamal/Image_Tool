@@ -13,6 +13,6 @@ export default async(imagePath: string): Promise<string> => {
     while(imagePath[index] !== '.') {
         extension += imagePath[index--];
     }
-    const path: string = await save_image(`denoise_${extension.split("").reverse().join("")}`, denoisedImage);
+    const path: string = await save_image(`denoise.${extension.split("").reverse().join("")}`, denoisedImage);
     return path;
 }

@@ -19,6 +19,6 @@ export default async(imagePath: string): Promise<string> => {
     while(imagePath[index] !== '.') {
         extension += imagePath[index--];
     }
-    const path: string = await save_image(`upscaale_${extension.split("").reverse().join("")}`, upscaledBuffer);
+    const path: string = await save_image(`upscaale.${extension.split("").reverse().join("")}`, upscaledBuffer);
     return path;
 }

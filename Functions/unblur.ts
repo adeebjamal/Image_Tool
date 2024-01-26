@@ -13,6 +13,6 @@ export default async(imagePath: string): Promise<string> => {
     while(imagePath[index] !== '.') {
         extension += imagePath[index--];
     }
-    const path: string = await save_image(`unblur_${extension.split("").reverse().join("")}`, unblurredBuffer);
+    const path: string = await save_image(`unblur.${extension.split("").reverse().join("")}`, unblurredBuffer);
     return path;
 }
