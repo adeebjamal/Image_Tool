@@ -63,3 +63,6 @@ ts-node server.ts
 * `Sharp`: Image processing library.
 * `Multer`: Middleware for handling file uploads.
 * `EJS`: Templating engine for rendering views.
+
+### Upcoming features
+* Background remover
